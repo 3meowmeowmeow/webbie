@@ -1,0 +1,84 @@
+/* @keyframes suspicious {
+    0% { transform: skewY(-15deg) skewX(-15deg); }
+    50% { transform: skewY(15deg) skewX(15deg); }
+    100% { transform: skewY(-15deg) skewX(-15deg); }
+} */
+
+:root {
+    --background-biege: rgb(233, 216, 196)
+}
+
+p {
+    color: rgb(109, 99, 82);
+    font-family: sans-serif;
+    text-wrap: wrap;
+    word-break: break-all;
+}
+
+
+body {
+    background: var(--background-biege);
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    background-image: linear-gradient(var(--background-biege) 25%, white 75%);
+
+}
+
+.centerBox {
+    background-color: white;
+    border-radius: 16px;
+    padding: 80px;
+    box-shadow: 0 4px 8px black;
+    width: 25%;
+
+    display: grid;
+    grid-template-columns: 3fr fit-content(40%) 1fr;
+}
+
+.centerBox > div {
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#about-me {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    flex-wrap: wrap;
+}
+
+#socials > a > img {
+    width: 50px;
+}
+
+#embed {
+    padding: 0px;
+}
+
+#embed > iframe {
+    height: 16vw;
+    width: 9vw;
+}
+
+img {
+    border-radius: 1000px;
+    /* animation-name: suspicious;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+}
+
+h1 {
+    border: 1px solid black;
+
+}
